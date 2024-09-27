@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Snake Game</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <h1>Snake Game</h1>
+    <div id="msg">Press SpaceBar to Pause and Continue the Game</div>
+    <div id="container">
+        <canvas id="gameBoard" width="500" height="500"></canvas>
+        <div id="score">Score : <span id="scoreValue">0</span></div>
+        <div id="resume">
+            <button onclick="start()" id="start">Start</button>
+        </div>
+        <div id="forBtns">
+            <button onclick="forUp()" id="up"><i class="fa-solid fa-angle-up"></i></button><br>
+            <button onclick="forLeft()" id="left"><i class="fa-solid fa-angle-left"></i></button>
+            <button onclick="forDown()" id="down"><i class="fa-solid fa-angle-down"></i></button>
+            <button onclick="forRight()" id="right"><i class="fa-solid fa-angle-right"></i></button><br>
+        </div>
+        <button onclick="easy()">Easy</button>
+        <button onclick="medium()">Medium</button>
+        <button onclick="hard()">Hard</button>
+        <p>Select any one of the mode and press anykey to Start the Game</p>
+        
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
